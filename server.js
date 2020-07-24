@@ -2,6 +2,8 @@ if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
 
+const PORT = porcess.env.PORT || 3000;
+
 const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
 const stripePublicKey = process.env.STRIPE_PUBLIC_KEY;
 
@@ -46,7 +48,7 @@ app.post("/purchase", (req, res) => {
         });
         total = total + itemJson.price * item.quantity;
       });
-      stripe.charges
+      /*stripe.charges
         .create({
           amount: total,
           source: req.body.stripeTokenId,
@@ -61,11 +63,11 @@ app.post("/purchase", (req, res) => {
           console.log(req.body.stripeTokenId);
           console.log(total);
           res.status(500).end();
-        });
+        });*/
     }
   });
 });
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log("server started on 3000");
 });
