@@ -1,0 +1,40 @@
+.AdminOptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 330px;
+  width: 95%;
+  max-width: 700px;
+  margin: auto;
+}
+
+.options-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.options-column {
+  box-shadow: 0 0 5px darkgrey;
+  width: 32%;
+  height: 150px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.options-column p {
+  text-align: center;
+  margin: 0;
+}
+
+.options-column p i {
+  font-size: 40px;
+  padding-bottom: 5px;
+  color: tomato;
+}
+
+.adminsMain {
+  margin-bottom: 20px;
+}
