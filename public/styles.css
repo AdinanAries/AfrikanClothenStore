@@ -399,4 +399,29 @@ body {
   .shopping-cart-icon {
     right: 0;
   }
+  .tour-item {
+    display: flex;
+    padding-right: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tour-date {
+    padding: 10px 5px;
+    width: 100%;
+  }
+
+  .tour-city {
+    padding: 10px 5px;
+    width: 100%;
+  }
+
+  .tour-arena {
+    padding: 10px 5px;
+    width: 100%;
+  }
+  .tour-btn {
+    min-width: 100% !important;
+    text-align: center !important;
+  }
 }
