@@ -14,6 +14,46 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
+  <style>
+    header {
+      min-height: 30vh;
+    }
+    .gender-selection {
+      display: flex;
+      justify-content: center;
+    }
+    .gender-option {
+      box-shadow: 0 0 5px darkgrey;
+      border-radius: 4px;
+      min-height: 30px;
+      width: 130px;
+      margin: 0 10px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .gender-option p {
+      margin: 0;
+      text-align: center;
+    }
+    .content-section {
+      min-height: 50vh;
+    }
+    .options-title {
+      font-size: 1.5rem;
+    }
+    .fabric-option {
+      display: flex;
+      justify-content: center;
+    }
+    .fabric-image {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 20px;
+    }
+  </style>
   <body>
     <header class="main-header">
       <div class="shopping-cart-icon">
@@ -28,9 +68,9 @@
         </ul>
       </nav>
       <div>
-        <h1 class="band-name band-name-large">Mama Store</h1>
+        <h1 class="band-name band-name-large">WebsiteName</h1>
         <p class="band-mottor">
-          quality and affordable clothing
+          Order your african clothen here
         </p>
       </div>
       <div class="container">
@@ -41,8 +81,61 @@
       <!--button type="button" class="btn btn-header btn-play">&#9658;</button-->
     </header>
     <section class="content-section container">
-      <h2 class="section-header">Today's Specials</h2>
-      <div>
+      <div id="genderDiv">
+        <h2 class="section-header options-title">
+          <img
+            src="icons/icons8-gender-100.png"
+            style="width: 25px; height: 25px;"
+          />
+          Pick Your Gender
+        </h2>
+        <div class="gender-selection">
+          <div class="gender-option">
+            <p>
+              <img
+                src="icons/male-user.png"
+                style="width: 40px; height: 40px;"
+              />
+            </p>
+            <p>Male</p>
+          </div>
+          <div class="gender-option">
+            <p>
+              <img
+                src="icons/female-user.png"
+                style="width: 40px; height: 40px;"
+              />
+            </p>
+            <p>Female</p>
+          </div>
+        </div>
+      </div>
+      <div class="fabric-selection">
+        <h2 class="section-header options-title">
+          <img
+            src="icons/icons8-gender-100.png"
+            style="width: 25px; height: 25px;"
+          />
+          Pick A Fabric
+        </h2>
+        <div class="fabric-option">
+          <div class="fabric-image">
+            <img
+              src="Images/AfricanFabric.jpg"
+              style="width: 50px; height: 50px;"
+            />
+          </div>
+          <div class="fabric-desc">
+            <p>Name</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+              expedita nam quae...
+            </p>
+            <p>$0.00</p>
+          </div>
+        </div>
+      </div>
+      <!--div>
         <div class="tour-row">
           <span class="tour-item tour-date"
             ><img
@@ -115,7 +208,7 @@
             Add to Card
           </button>
         </div>
-      </div>
+      </div-->
     </section>
     <footer class="main-footer">
       <div class="container main-footer-container">
