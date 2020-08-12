@@ -11,6 +11,10 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
@@ -42,6 +46,12 @@
     }
     .options-title {
       font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+    .design-selection,
+    .clothen-type-selection,
+    .fabric-selection {
+      display: none;
     }
     .fabric-option,
     .clothen-type-option,
@@ -56,6 +66,16 @@
       flex-direction: column;
       justify-content: center;
       margin-right: 20px;
+    }
+    .next_previous_btns {
+      display: flex;
+      justify-content: space-between;
+    }
+    .next_previous_btn {
+      margin-top: 20px;
+      border-radius: 4px;
+      box-shadow: 0 0 4px darkgrey;
+      padding: 10px;
     }
   </style>
   <body>
@@ -96,7 +116,7 @@
         Our platform helps you build and order your own customized african
         clothen. Follow the steps below to order your clothen
       </p>
-      <div id="genderDiv">
+      <div id="genderDiv" class="animate__animated animate__heartBeat">
         <h2 class="section-header options-title">
           <img
             src="icons/icons8-gender-100.png"
@@ -125,7 +145,10 @@
           </div>
         </div>
       </div>
-      <div class="fabric-selection">
+      <div
+        id="fabricsDiv"
+        class="fabric-selection animate__animated animate__backInRight"
+      >
         <h2 class="section-header options-title">
           <!--img
             src="icons/icons8-gender-100.png"
@@ -149,8 +172,15 @@
             <p>$0.00</p>
           </div>
         </div>
+        <div class="next_previous_btns">
+          <div id="toGenderBackBtn" class="next_previous_btn">Back</div>
+          <div id="toClothenTypeDiv" class="next_previous_btn">Next</div>
+        </div>
       </div>
-      <div class="clothen-type-selection">
+      <div
+        id="clothenTypeDiv"
+        class="clothen-type-selection animate__animated animate__backInRight"
+      >
         <h2 class="section-header options-title">
           <!--img
             src="icons/icons8-gender-100.png"
@@ -174,8 +204,15 @@
             <p>$0.00</p>
           </div>
         </div>
+        <div class="next_previous_btns">
+          <div id="toFabricDiv" class="next_previous_btn">Back</div>
+          <div id="toDesignDiv" class="next_previous_btn">Next</div>
+        </div>
       </div>
-      <div class="design-selection">
+      <div
+        id="designDiv"
+        class="design-selection animate__animated animate__backInRight"
+      >
         <h2 class="section-header options-title">
           <!--img
             src="icons/icons8-gender-100.png"
@@ -198,6 +235,10 @@
             </p>
             <p>$0.00</p>
           </div>
+        </div>
+        <div class="next_previous_btns">
+          <div id="backToClothenType" class="next_previous_btn">Back</div>
+          <div class="next_previous_btn">Next</div>
         </div>
       </div>
       <!--div>
@@ -297,5 +338,6 @@
         </ul>
       </div>
     </footer>
+    <script src="design.js"></script>
   </body>
 </html>
