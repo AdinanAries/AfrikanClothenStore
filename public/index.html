@@ -70,12 +70,19 @@
     .next_previous_btns {
       display: flex;
       justify-content: space-between;
+      padding-bottom: 15px;
     }
     .next_previous_btn {
       margin-top: 20px;
       border-radius: 4px;
       box-shadow: 0 0 4px darkgrey;
       padding: 10px;
+    }
+    .SelectedOption {
+      background-color: lightblue;
+    }
+    .DeselectedSelectedOption {
+      background-color: white;
     }
   </style>
   <body>
@@ -156,7 +163,51 @@
           /-->
           Pick A Fabric
         </h2>
-        <div class="fabric-option">
+        <div
+          id="IDFromDB1"
+          onclick='setFabricSelected("IDFromDB1");'
+          class="fabric-option DeselectedSelectedOption"
+        >
+          <div class="fabric-image">
+            <img
+              src="Images/AfricanFabric.jpg"
+              style="width: 50px; height: 50px;"
+            />
+          </div>
+          <div class="fabric-desc">
+            <p>Fabric Name</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+              expedita nam quae...
+            </p>
+            <p>$0.00</p>
+          </div>
+        </div>
+        <div
+          id="IDFromDB2"
+          onclick='setFabricSelected("IDFromDB2");'
+          class="fabric-option"
+        >
+          <div class="fabric-image">
+            <img
+              src="Images/AfricanFabric.jpg"
+              style="width: 50px; height: 50px;"
+            />
+          </div>
+          <div class="fabric-desc">
+            <p>Fabric Name</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+              expedita nam quae...
+            </p>
+            <p>$0.00</p>
+          </div>
+        </div>
+        <div
+          id="IDFromDB3"
+          onclick='setFabricSelected("IDFromDB3");'
+          class="fabric-option"
+        >
           <div class="fabric-image">
             <img
               src="Images/AfricanFabric.jpg"
@@ -188,7 +239,51 @@
           /-->
           Pick Clothen Type
         </h2>
-        <div class="clothen-type-option">
+        <div
+          id="CTIDFromDB1"
+          onclick='setCTypeSelected("CTIDFromDB1");'
+          class="clothen-type-option"
+        >
+          <div class="clothen-type-image">
+            <img
+              src="Images/ShirtCloth.webp"
+              style="width: 50px; height: 50px;"
+            />
+          </div>
+          <div class="clothen-type-desc">
+            <p>Clothen type Name</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+              expedita nam quae...
+            </p>
+            <p>$0.00</p>
+          </div>
+        </div>
+        <div
+          id="CTIDFromDB2"
+          onclick='setCTypeSelected("CTIDFromDB2");'
+          class="clothen-type-option"
+        >
+          <div class="clothen-type-image">
+            <img
+              src="Images/ShirtCloth.webp"
+              style="width: 50px; height: 50px;"
+            />
+          </div>
+          <div class="clothen-type-desc">
+            <p>Clothen type Name</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+              expedita nam quae...
+            </p>
+            <p>$0.00</p>
+          </div>
+        </div>
+        <div
+          id="CTIDFromDB3"
+          onclick='setCTypeSelected("CTIDFromDB3");'
+          class="clothen-type-option"
+        >
           <div class="clothen-type-image">
             <img
               src="Images/ShirtCloth.webp"
@@ -220,7 +315,51 @@
           /-->
           Add Your Design
         </h2>
-        <div class="design-option">
+        <div
+          id="DSNIDFromDB1"
+          onclick='setDTypeSelected("DSNIDFromDB1");'
+          class="design-option"
+        >
+          <div class="design-image">
+            <img
+              src="Images/DesignImage.jpg"
+              style="width: 50px; height: 50px;"
+            />
+          </div>
+          <div class="desing-desc">
+            <p>Desing Name</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+              expedita nam quae...
+            </p>
+            <p>$0.00</p>
+          </div>
+        </div>
+        <div
+          id="DSNIDFromDB2"
+          onclick='setDTypeSelected("DSNIDFromDB2");'
+          class="design-option"
+        >
+          <div class="design-image">
+            <img
+              src="Images/DesignImage.jpg"
+              style="width: 50px; height: 50px;"
+            />
+          </div>
+          <div class="desing-desc">
+            <p>Desing Name</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+              expedita nam quae...
+            </p>
+            <p>$0.00</p>
+          </div>
+        </div>
+        <div
+          id="DSNIDFromDB9"
+          onclick='setDTypeSelected("DSNIDFromDB9");'
+          class="design-option"
+        >
           <div class="design-image">
             <img
               src="Images/DesignImage.jpg"

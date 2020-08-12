@@ -39,3 +39,47 @@ backToClothenType.addEventListener("click", (evnt) => {
   document.getElementById("designDiv").style.display = "none";
   document.getElementById("clothenTypeDiv").style.display = "block";
 });
+
+//setting selected fabric
+const setFabricSelected = (IDFromDB) => {
+  let deselected = Array.from(document.getElementsByClassName("fabric-option"));
+  deselected.forEach((each) => {
+    each.classList.add("DeselectedSelectedOption");
+    each.classList.remove("SelectedOption");
+  });
+
+  document.getElementById(IDFromDB).classList.add("SelectedOption");
+  document
+    .getElementById(IDFromDB)
+    .classList.remove("DeselectedSelectedOption");
+};
+
+//setting selected clothen type
+const setCTypeSelected = (IDFromDB) => {
+  let deselected = Array.from(
+    document.getElementsByClassName("clothen-type-option")
+  );
+  deselected.forEach((each) => {
+    each.classList.add("DeselectedSelectedOption");
+    each.classList.remove("SelectedOption");
+  });
+
+  document.getElementById(IDFromDB).classList.add("SelectedOption");
+  document
+    .getElementById(IDFromDB)
+    .classList.remove("DeselectedSelectedOption");
+};
+
+//setting selected design type
+const setDTypeSelected = (IDFromDB) => {
+  let deselected = Array.from(document.getElementsByClassName("design-option"));
+  deselected.forEach((each) => {
+    each.classList.add("DeselectedSelectedOption");
+    each.classList.remove("SelectedOption");
+  });
+
+  document.getElementById(IDFromDB).classList.add("SelectedOption");
+  document
+    .getElementById(IDFromDB)
+    .classList.remove("DeselectedSelectedOption");
+};
