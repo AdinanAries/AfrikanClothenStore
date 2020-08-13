@@ -23,7 +23,7 @@ body {
 }
 .shopping-cart-icon {
   position: fixed;
-  z-index: 10;
+  z-index: 9;
   right: 40px;
   top: 0;
   padding: 20px;
@@ -379,7 +379,25 @@ body {
   margin: 40px auto 80px auto;
   font-size: 1.75em;
 }
-
+.CheckoutCart {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: white;
+}
+.CloseShoppingCartBtn {
+  position: fixed;
+  z-index: 11;
+  right: 20px;
+  top: 5px;
+  color: white;
+  font-size: 20px;
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
 @media only screen and (max-width: 1000px) {
   .band-name {
     font-size: 1em;
